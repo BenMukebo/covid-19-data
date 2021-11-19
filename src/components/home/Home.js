@@ -9,7 +9,6 @@ import {
 import { fetchCountries } from '../../redux/countries/countries';
 import formatNumber from '../utils/formatNumber';
 import Item from './Item';
-// import Icon from '../utils/Icon';
 import Africa from '../../images/africa.svg';
 import styles from '../css/home.module.css';
 
@@ -35,22 +34,17 @@ const Home = () => {
   return (
     <section>
       <header className={styles.header}>
-        {/* <Icon name="arrow_back_ios" /> */}
         <div className={styles['left-year']}>
           <span>
             <FontAwesomeIcon icon={faAngleLeft} className="fontawesome" />
           </span>
           <h4>2021</h4>
         </div>
-
         <h4 className={styles['header-title']}>Most views</h4>
-        {/* <Icon name="mic" /> */}
-
         <div className={styles['right-icons']}>
           <span>
             <FontAwesomeIcon icon={faMicrophoneAlt} />
           </span>
-          {/* <Icon name="settings" /> */}
           <span>
             <FontAwesomeIcon icon={faCog} />
           </span>

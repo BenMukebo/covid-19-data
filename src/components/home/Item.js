@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Items from './Items';
-// import '../css/items.module.css';
 import styles from '../css/items.module.css';
 
 const Item = ({ items = [] }) => (

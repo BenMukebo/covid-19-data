@@ -30,9 +30,7 @@ const Details = () => {
   }
 
   const { All } = country;
-  // console.log(All);
   const list = Object.entries(country).slice();
-  // console.log(list);
 
   return (
     <section>
@@ -118,18 +116,3 @@ const Details = () => {
 };
 
 export default Details;
-
-// abbreviation: "ZA"
-// capital_city: "Pretoria"
-// confirmed: 2926914
-// continent: "Africa"
-// country: "South Africa"
-// deaths: 89515
-// elevation_in_meters: "1,034"
-// iso: 710
-// lat: "-30.5595"
-// life_expectancy: "51.1"
-// location: "Southern Africa"
-// long: "22.9375"
-// population: 56717156
-// recovered: 0
