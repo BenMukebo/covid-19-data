@@ -11,7 +11,7 @@ import formatNumber from '../utils/formatNumber';
 import Item from './Item';
 // import Icon from '../utils/Icon';
 import Africa from '../../images/africa.svg';
-import styles from '../css/Home.module.css';
+import styles from '../css/home.module.css';
 
 const Home = () => {
   const continent = 'Africa';
@@ -34,31 +34,43 @@ const Home = () => {
 
   return (
     <section>
-      <header className="header">
+      <header className={styles.header}>
         {/* <Icon name="arrow_back_ios" /> */}
-        <FontAwesomeIcon icon={faAngleLeft} className="fontawesome" />
-        <h4>2021</h4>
-        <h5 className="header-title">most views</h5>
+        <div className={styles['left-year']}>
+          <span>
+            <FontAwesomeIcon icon={faAngleLeft} className="fontawesome" />
+          </span>
+          <h4>2021</h4>
+        </div>
+
+        <h4 className={styles['header-title']}>Most views</h4>
         {/* <Icon name="mic" /> */}
-        <FontAwesomeIcon icon={faMicrophoneAlt} />
-        <div className="pl-5">
+
+        <div className={styles['right-icons']}>
+          <span>
+            <FontAwesomeIcon icon={faMicrophoneAlt} />
+          </span>
           {/* <Icon name="settings" /> */}
-          <FontAwesomeIcon icon={faCog} />
+          <span>
+            <FontAwesomeIcon icon={faCog} />
+          </span>
         </div>
       </header>
-      <div className={styles.HomeBanner}>
-        <div className="Home-banner-left">
-          <img src={Africa} alt="Banner view" className="App-map" />
+
+      <div className={styles['main-home']}>
+        <div className={styles['home-img']}>
+          <img src={Africa} alt="Africa-img" />
         </div>
-        <div className="Home-banner-right">
-          <h1 className="App-title">{continent}</h1>
-          <p className="App-subtitle">
+        <div className={styles['details-title']}>
+          <h1>{continent}</h1>
+          <p>
             {`${formatNumber(totalConfirmed)} cases`}
           </p>
         </div>
       </div>
+
       <section className="Home-stats">
-        <h5 className="App-section-title">STATS By COUNTRY</h5>
+        <h5 className="App-section-title">STATS By COUNTRY 2021</h5>
         <Item items={items} />
       </section>
     </section>
