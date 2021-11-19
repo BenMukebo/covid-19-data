@@ -69,8 +69,8 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="Home-stats">
-        <h5 className="App-section-title">STATS By COUNTRY 2021</h5>
+      <section className={styles.contries}>
+        <h5>STATS By COUNTRY 2021</h5>
         <Item items={items} />
       </section>
     </section>

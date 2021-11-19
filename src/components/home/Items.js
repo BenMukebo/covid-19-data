@@ -3,23 +3,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowCircleRight,
 } from '@fortawesome/free-solid-svg-icons';
-// import Icon from '../utils/Icon';
 import formatNumber from '../utils/formatNumber';
-import virus from '../../images/virus.svg';
-// import styles from '../css/home.module.css';
+import covid from '../../images/covid.svg';
+import styles from '../css/items.module.css';
 
 const Items = ({ confirmed, name }) => (
-  <div className="Home-item-content">
-    <div className="Home-item-icon">
-      {/* <Icon name="arrow_circle_right" /> */}
-      <FontAwesomeIcon icon={faArrowCircleRight} />
+  <div className={styles['item-content']}>
+    <div className={styles['item-icon']}>
+      <FontAwesomeIcon className={styles.icon} icon={faArrowCircleRight} />
     </div>
-    <div className="Home-item-top">
-      <img src={virus} alt="virus view" className="Home-item-image" />
+    <div className={styles['item-img']}>
+      <img src={covid} alt="virus-img" />
     </div>
-    <div className="Home-item-bottom">
-      <h4 className="App-title">{name}</h4>
-      <p className="App-subtitle">{formatNumber(confirmed)}</p>
+    <div className={styles['item-btns']}>
+      <h4>{name}</h4>
+      <p>{formatNumber(confirmed)}</p>
     </div>
   </div>
 );

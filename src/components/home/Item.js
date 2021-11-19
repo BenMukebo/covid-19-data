@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Items from './Items';
+// import '../css/items.module.css';
+import styles from '../css/items.module.css';
 
 const Item = ({ items = [] }) => (
-  <ul className="Home-grid">
+  <ul className={styles.container}>
     {items.map(({ name, confirmed }) => (
-      <li key={name} className="Home-grid-item">
+      <li key={name} className={styles['container-items']}>
         <Link to={`/country/${name}`}>
           <Items confirmed={confirmed} name={name} />
         </Link>
