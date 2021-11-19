@@ -1,9 +1,15 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faAngleLeft,
+  faCog,
+  faMicrophoneAlt,
+} from '@fortawesome/free-solid-svg-icons';
 import { fetchCountries } from '../../redux/countries/countries';
 import formatNumber from '../utils/formatNumber';
 import Item from './Item';
-import Icon from '../utils/Icon';
+// import Icon from '../utils/Icon';
 import Africa from '../../images/africa.svg';
 import styles from '../css/Home.module.css';
 
@@ -29,12 +35,15 @@ const Home = () => {
   return (
     <section>
       <header className="header">
-        <Icon name="arrow_back_ios" />
+        {/* <Icon name="arrow_back_ios" /> */}
+        <FontAwesomeIcon icon={faAngleLeft} className="fontawesome" />
         <h4>2021</h4>
         <h5 className="header-title">most views</h5>
-        <Icon name="mic" />
+        {/* <Icon name="mic" /> */}
+        <FontAwesomeIcon icon={faMicrophoneAlt} />
         <div className="pl-5">
-          <Icon name="settings" />
+          {/* <Icon name="settings" /> */}
+          <FontAwesomeIcon icon={faCog} />
         </div>
       </header>
       <div className={styles.HomeBanner}>
