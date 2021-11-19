@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { fetchCountry } from '../../redux/countries/countries';
 import formatNumber from '../utils/formatNumber';
-import Icon from '../Icon';
-import image from '../../assets/covid.svg';
+import Icon from '../utils/Icon';
+import image from '../../images/covid.svg';
 // import styles from '../css/Details.module.css';
 
 const Details = () => {

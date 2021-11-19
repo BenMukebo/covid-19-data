@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCountries } from '../../redux/countries/countries';
-import Icon from '../Icon';
 import formatNumber from '../utils/formatNumber';
+import Item from './Item';
+import Icon from '../utils/Icon';
+import Africa from '../../images/africa.svg';
 import styles from '../css/Home.module.css';
-import map from '../../assets/africa.svg';
-import Grid from './Grid';
 
 const Home = () => {
   const continent = 'Africa';
@@ -39,7 +39,7 @@ const Home = () => {
       </header>
       <div className={styles.HomeBanner}>
         <div className="Home-banner-left">
-          <img src={map} alt="Banner view" className="App-map" />
+          <img src={Africa} alt="Banner view" className="App-map" />
         </div>
         <div className="Home-banner-right">
           <h1 className="App-title">{continent}</h1>
@@ -50,7 +50,7 @@ const Home = () => {
       </div>
       <section className="Home-stats">
         <h5 className="App-section-title">STATS By COUNTRY</h5>
-        <Grid items={items} />
+        <Item items={items} />
       </section>
     </section>
   );
