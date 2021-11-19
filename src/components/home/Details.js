@@ -1,9 +1,17 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faArrowCircleRight,
+  faAngleLeft,
+  faCog,
+  faMicrophoneAlt,
+  // faGlobeEurope,
+} from '@fortawesome/free-solid-svg-icons';
 import { fetchCountry } from '../../redux/countries/countries';
 import formatNumber from '../utils/formatNumber';
-import Icon from '../utils/Icon';
+// import Icon from '../utils/Icon';
 import image from '../../images/covid.svg';
 // import styles from '../css/Details.module.css';
 
@@ -30,12 +38,15 @@ const Details = () => {
     <section>
       <header className="header">
         <Link to="/">
-          <Icon name="arrow_back_ios" />
+          {/* <Icon name="arrow_back_ios" /> */}
+          <FontAwesomeIcon icon={faAngleLeft} className="fontawesome" />
         </Link>
         <h5 className="header-title">town/city views</h5>
-        <Icon name="mic" />
+        {/* <Icon name="mic" /> */}
+        <FontAwesomeIcon icon={faMicrophoneAlt} />
         <div className="pl-5">
-          <Icon name="settings" />
+          {/* <Icon name="settings" /> */}
+          <FontAwesomeIcon icon={faCog} />
         </div>
       </header>
       <div className="Details">
@@ -63,7 +74,8 @@ const Details = () => {
                   {' '}
                   cases
                 </p>
-                <Icon name="arrow_circle_right" />
+                {/* <Icon name="arrow_circle_right" /> */}
+                <FontAwesomeIcon icon={faArrowCircleRight} />
               </div>
             </li>
           ))}
