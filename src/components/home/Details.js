@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faArrowCircleRight,
   faAngleLeft,
   faCog,
   faMicrophoneAlt,
@@ -106,7 +105,6 @@ const Details = () => {
                   <p>{formatNumber(updated)}</p>
                 </div>
               </div>
-              <FontAwesomeIcon icon={faArrowCircleRight} />
             </li>
           ))}
         </ul>
