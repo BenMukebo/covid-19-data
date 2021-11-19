@@ -47,21 +47,18 @@
   padding: 1rem;
 }
 
-.main-img img {
+.home-img img {
   width: 100%;
   max-width: 400px;
   opacity: 0.3;
 }
 
-.main-title {
+.home-title {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* padding: 2rem;
-  margin: 0; */
 }
 
-.main-title h1 {
+.home-title h1 {
   font-size: 2.2rem;
 }
 
