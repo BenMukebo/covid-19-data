@@ -35,6 +35,7 @@ span.left {
   justify-content: space-around;
   align-items: center;
   background-color: var(--light-secondary);
+  padding: 0 2%;
 }
 
 .details-img {
@@ -59,4 +60,35 @@ span.left {
 
 .details-title p {
   font-size: 1.7rem;
+}
+
+.details-section h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.items {
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 2rem 1.8rem 1rem;
+  background-color: var(--dark-secondary);
+}
+
+.item:nth-child(odd) {
+  background-color: var(--light-secondary);
+}
+
+.item h5 {
+  font-size: 1.2rem;
+}
+
+.item p {
+  font-size: 1rem;
 }

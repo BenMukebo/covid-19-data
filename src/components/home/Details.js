@@ -32,7 +32,7 @@ const Details = () => {
   const { All } = country;
   // console.log(All);
   const list = Object.entries(country).slice();
-  console.log(list);
+  // console.log(list);
 
   return (
     <section>
@@ -67,45 +67,48 @@ const Details = () => {
         </div>
       </div>
 
-      <section className="Home-stats">
-        <h4 className="App-section-title">Twon/City cases</h4>
-        <ul>
+      <section className={styles['details-section']}>
+        <h4 className={styles['details-title']}>Twon/City cases</h4>
+        <ul className={styles['details-container']}>
           {list.map(([name, {
-            population, location, abbreviation, recovered, confirmed, deaths, updated,
+            population, location, abbreviation, continent, recovered, confirmed, deaths, updated,
           }]) => (
-            <li key={name} className="Details-item">
-              <div>
-                <div>
+            <li key={name} className={styles['details-items']}>
+              <div className={styles.items}>
+                <div className={styles.item}>
                   <h5>population</h5>
                   <p>{formatNumber(population)}</p>
                 </div>
-                <div>
+                <div className={styles.item}>
                   <h5>location</h5>
                   <p>{formatNumber(location)}</p>
                 </div>
-                <div>
-                  <h5>capital_city</h5>
+                <div className={styles.item}>
+                  <h5>abbreviation</h5>
                   <p>{formatNumber(abbreviation)}</p>
                 </div>
-                <div>
+                <div className={styles.item}>
+                  <h5>continent</h5>
+                  <p>{formatNumber(continent)}</p>
+                </div>
+                <div className={styles.item}>
                   <h5>recovered</h5>
                   <p>{formatNumber(recovered)}</p>
                 </div>
-                <div>
+                <div className={styles.item}>
                   <h5>confirmed</h5>
                   <p>{formatNumber(confirmed)}</p>
                 </div>
-
-                <div>
+                <div className={styles.item}>
                   <h5>deaths</h5>
                   <p>{formatNumber(deaths)}</p>
                 </div>
-                <div>
+                <div className={styles.item}>
                   <h5>Last updated</h5>
                   <p>{formatNumber(updated)}</p>
                 </div>
-                <FontAwesomeIcon icon={faArrowCircleRight} />
               </div>
+              <FontAwesomeIcon icon={faArrowCircleRight} />
             </li>
           ))}
         </ul>
