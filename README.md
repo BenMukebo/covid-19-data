@@ -166,7 +166,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## :handshake: Contributing
 
-Feel free to check the [issues page](https://github.com/BenMukebo/Math-magicians/issues)
+Feel free to check the [issues page](https://github.com/BenMukebo/covid-19-data/issues)
 
 Give a :star: if you like this project! ❤️❤️❤️
 
