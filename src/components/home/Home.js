@@ -43,10 +43,9 @@ const Home = () => {
     if (!e.target.value) {
       setLocalItems(items);
     }
-    const newItems = [...items];
-    // eslint-disable-next-line max-len
-    const filteredItems = newItems.filter((item) => item.name.toLowerCase().includes(e.target.value.toLowerCase()));
-    setLocalItems(filteredItems);
+    const itms = [...items];
+    const fil = itms.filter((el) => el.name.toLowerCase().includes(e.target.value.toLowerCase()));
+    setLocalItems(fil);
   };
 
   return (

@@ -11,7 +11,6 @@ const flterInput = {
   width: '30%',
 };
 
-// eslint-disable-next-line react/prop-types
 const Filter = ({ searchBar, onChange }) => (
   <div style={flterStyle}>
     <input placeholder="Search..." value={searchBar} onChange={onChange} style={flterInput} />
