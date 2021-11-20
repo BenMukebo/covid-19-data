@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const flterStyle = {
   transform: 'translateY(-1.5rem)',
   marginLeft: '1rem',
