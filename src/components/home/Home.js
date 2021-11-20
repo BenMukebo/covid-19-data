@@ -11,7 +11,6 @@ import formatNumber from '../utils/formatNumber';
 import Africa from '../../images/africa.svg';
 import styles from '../css/home.module.css';
 import Item from './Item';
-import Filter from './Filter';
 
 const Home = () => {
   const continent = 'Africa';
@@ -48,6 +47,18 @@ const Home = () => {
     setLocalItems(fil);
   };
 
+  const flterStyle = {
+    transform: 'translateY(-1.5rem)',
+    marginLeft: '1rem',
+  };
+  const flterInput = {
+    color: 'black',
+    padding: '0.4rem',
+    border: 'none',
+    outline: 'none',
+    width: '30%',
+  };
+
   return (
     <section>
       <header className={styles.header}>
@@ -82,7 +93,9 @@ const Home = () => {
 
       <section className={styles.contries}>
         <h5>STATS By COUNTRY 2021</h5>
-        <Filter searchBar={searchBar} onChange={handleChange} />
+        <div style={flterStyle}>
+          <input placeholder="Search..." value={searchBar} onChange={handleChange} style={flterInput} />
+        </div>
         <Item items={localItems} />
       </section>
     </section>
