@@ -90,7 +90,7 @@ $  npm install --save @fortawesome/react-fontawesome
 To watch and output to directories by using folder paths as your input and output
 
 ### Install React Router
-
+co
 - To use the Router component provided to wrap your components and associate them with a path.
 
 ```bash
