@@ -34,8 +34,6 @@ const Home = () => {
     }
   }, [items]);
 
-  console.log(items);
-
   if (loading) {
     return null;
   }
