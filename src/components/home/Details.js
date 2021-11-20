@@ -30,6 +30,7 @@ const Details = () => {
 
   const { All } = country;
   const list = Object.entries(country).slice();
+  // console.log(list);
 
   return (
     <section>

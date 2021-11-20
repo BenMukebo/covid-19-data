@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -8,12 +8,15 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { fetchCountries } from '../../redux/countries/countries';
 import formatNumber from '../utils/formatNumber';
-import Item from './Item';
 import Africa from '../../images/africa.svg';
 import styles from '../css/home.module.css';
+import Item from './Item';
+import Filter from './Filter';
 
 const Home = () => {
   const continent = 'Africa';
+
+  const [searchBar, setSearchBar] = useState('');
 
   const dispatch = useDispatch();
   const { items, totalConfirmed, loading } = useSelector((state) => ({
@@ -21,15 +24,30 @@ const Home = () => {
     loading: state.loadingBar.default,
   }));
 
+  const [localItems, setLocalItems] = useState([...items]);
+
   useEffect(() => {
-    if (!items.length) {
+    if (items.length === 0) {
       dispatch(fetchCountries(continent));
+    } else {
+      setLocalItems(items);
     }
-  }, []);
+  }, [items]);
 
   if (loading) {
     return null;
   }
+
+  const handleChange = (e) => {
+    setSearchBar(e.target.value);
+    if (!e.target.value) {
+      setLocalItems(items);
+    }
+    const newItems = [...items];
+    // eslint-disable-next-line max-len
+    const filteredItems = newItems.filter((item) => item.name.toLowerCase().includes(e.target.value.toLowerCase()));
+    setLocalItems(filteredItems);
+  };
 
   return (
     <section>
@@ -65,7 +83,8 @@ const Home = () => {
 
       <section className={styles.contries}>
         <h5>STATS By COUNTRY 2021</h5>
-        <Item items={items} />
+        <Filter searchBar={searchBar} onChange={handleChange} />
+        <Item items={localItems} />
       </section>
     </section>
   );
