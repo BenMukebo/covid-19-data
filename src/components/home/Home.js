@@ -39,10 +39,8 @@ const Home = () => {
   if (loading) {
     return null;
   }
-  // console.log(setLocalItems);
 
   const handleChange = (e) => {
-    // console.log(e.target.value);
     setSearchBar(e.target.value);
     if (!e.target.value) {
       setLocalItems(items);
