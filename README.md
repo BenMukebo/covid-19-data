@@ -44,6 +44,11 @@ You will also see any lint errors in the console.
 
 ### [Live Demo](https://benmukebo-covid-19-data.herokuapp.com/)
 
+## Loom 
+
+### [Loom](https://www.loom.com/share/82de7bc7b90e44f3be305fd70344fc20)
+
+
 
 ## Getting Started
 
