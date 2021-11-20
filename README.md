@@ -42,10 +42,8 @@ You will also see any lint errors in the console.
 
 ## Live Demo Links
 
-### [Github Pages](https://inspiring-noyce-cafdc0.netlify.app)
+### [Live Demo](https://benmukebo-covid-19-data.herokuapp.com/)
 
-
-### [Netlify](https://benmukebo-math-magicians.netlify.app)
 
 ## Getting Started
 

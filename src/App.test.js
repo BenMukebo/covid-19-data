@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom';
 import { render, screen, fireEvent } from './test-utils';
 import App from './App';
+// import index from './index';
 
 jest.mock('./redux/countries/api.js');
 
