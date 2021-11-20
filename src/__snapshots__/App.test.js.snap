@@ -109,6 +109,29 @@ Array [
       <h5>
         STATS By COUNTRY 2021
       </h5>
+      <div
+        style={
+          Object {
+            "marginLeft": "1rem",
+            "transform": "translateY(-1.5rem)",
+          }
+        }
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Search..."
+          style={
+            Object {
+              "border": "none",
+              "color": "black",
+              "outline": "none",
+              "padding": "0.4rem",
+              "width": "30%",
+            }
+          }
+          value=""
+        />
+      </div>
       <ul
         className="container"
       />

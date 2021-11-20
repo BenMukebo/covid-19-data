@@ -22,7 +22,7 @@ function render(
     ...renderOptions
   } = {},
 ) {
-  function Wrapper({ children }) {
+  function Wrapper(children) {
     return <Provider store={store}>{children}</Provider>;
   }
   return rtlRender(ui, { wrapper: Wrapper, ...renderOptions });
