@@ -35,16 +35,14 @@ This project is build with:
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-- ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoColor=ffffff&labelColor=E34F26), ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6)
-- ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
-- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
--  ![Redux](https://img.shields.io/badge/-Redux-000000?style=flat&logo=redux&logoColor=ffffff&labelColor=violet)
+- ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoColor=ffffff&labelColor=E34F26) ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6)
+- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)  ![Redux](https://img.shields.io/badge/-Redux-000000?style=flat&logo=redux&logoColor=ffffff&labelColor=violet)
 
-## Live Demo Links
+## Live Demo Link
 
 ### [Live Demo](https://benmukebo-covid-19-data.herokuapp.com/)
 
-## Loom 
+## Loom Video Link
 
 ### [Loom](https://www.loom.com/share/82de7bc7b90e44f3be305fd70344fc20)
 
@@ -93,7 +91,7 @@ $  npm install --save @fortawesome/react-fontawesome
 To watch and output to directories by using folder paths as your input and output
 
 ### Install React Router
-co
+
 - To use the Router component provided to wrap your components and associate them with a path.
 
 ```bash
@@ -101,7 +99,6 @@ $ npm install react-router-dom
 ```
 ### Install React Redux Loading Bar
 
-- To use the Router component provided to wrap your components and associate them with a path.
 
 ```bash
 $ npm install --save react-redux-loading-bar
@@ -114,15 +111,22 @@ $ npm install --save react-redux-loading-bar
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 
-## Run Tests
+## Tests
 
- npm i @testing-library/jest-dom   
- npm install --save-dev @testing-library/jest-dom
-
+- Install
+  
 ```bash
-$ npm install @testing-library/react react-test-renderer jest-dom --save-dev
+$  npm i @testing-library/jest-dom   
+```
+```bash
+$ npm install --save-dev @testing-library/jest-dom
 ```
 
+- Run test
+  
+```bash
+$ npm run test
+```
 
 ### Learn More
 
