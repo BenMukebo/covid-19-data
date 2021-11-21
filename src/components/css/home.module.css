@@ -76,3 +76,7 @@ section.contries {
   text-align: right;
   margin-right: 1rem;
 }
+
+input::placeholder {
+  color: var(--light-secondary);
+}

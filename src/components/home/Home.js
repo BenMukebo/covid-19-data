@@ -52,7 +52,7 @@ const Home = () => {
     marginLeft: '1rem',
   };
   const flterInput = {
-    color: 'black',
+    color: 'var(--light-secondary)',
     padding: '0.4rem',
     border: 'none',
     outline: 'none',
