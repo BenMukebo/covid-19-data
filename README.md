@@ -3,9 +3,7 @@
 # Covid_19_data
 
 ## Description
-- Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
-  - Make simple calculations.
-  - Read a random math-related quote.
+- Covid 19 Data is a tracking site that provides the necessary information on covid 19 cases in any African country and their update
   
 
 ||     Home       ||        Details        ||
